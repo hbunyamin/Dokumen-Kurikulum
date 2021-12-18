@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{compute\PYGZus{}check\PYGZus{}digit}\PYG{p}{(}\PYG{n}{args} \PYG{o}{=} \PYG{k+kc}{None}\PYG{p}{):}
+    \PYG{k}{pass}
+\end{Verbatim}
