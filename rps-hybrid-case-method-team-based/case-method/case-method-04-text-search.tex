@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage{graphicx,fancyhdr,amsmath,amssymb,amsthm,subfig,url,hyperref}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{natbib}
+\usepackage{cancel}
+
+\usepackage{minted}
+
+\usepackage[shortlabels]{enumitem}
+
+% ========================
+%  Khusus Pseudo code
+% ========================
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+
+%----------------------- Macros and Definitions --------------------------
+
+%%% FILL THIS OUT
+\newcommand{\studentname}{Jane Doe}
+\newcommand{\suid}{janedoe}
+\newcommand{\exerciseset}{Homework}
+%%% END
+
+
+
+\renewcommand{\theenumi}{\bf \Alph{enumi}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+\graphicspath{{figures/}}
+
+%-------------------------------- Title ----------------------------------
+
+\title{Study Kasus 4: \textit{Text Search}} 
+\author{IN232 Matematika Diskrit}
+\date{}
+%--------------------------------- Text ----------------------------------
+
+\begin{document}
+\maketitle
+
+%	\begin{enumerate}[-,topsep=0pt, nosep,label=\alph*. ]
+%		\item How many ways are there to pick two representatives, so that one is a mathematics major and the other is a computer science major?
+%		\item How many ways are there to pick one representative who is either a mathematics major or a computer science major?
+%	\end{enumerate}
+
+\section*{Pencarian (\textit{Searching})}
+Sebagian besar waktu komputer digunakan untuk pencarian (\textit{searching}). Contoh-contoh pencarian dengan menggunakan komputer, antara lain:
+	\begin{enumerate}[-,topsep=0pt, nosep,label=\alph*. ]
+		\item mencari \textit{record} di bank untuk seorang teller;
+		\item mencari solusi untuk teka-teki atau untuk gerakan yang optimal dalam suatu permainan;
+		\item menggunakan mesin pencari (\textit{search engine}) di web;
+		\item mencari teks tertentu dalam dokumen saat menjalankan pengolah kata.
+	\end{enumerate}
+
+\bigskip
+\noindent Misalkan kita diberikan teks dokumen $t$ dan anda ingin menemukan kemunculan pertama dari pola $p$ di $t$ (misalnya, anda ingin menemukan kemunculan pertama dari string $p$ = "Nova Scotia" di $t$) atau menentukan bahwa $p$ tidak ditemukan di $t$. Anda mengindeks karakter dalam $t$ untuk dimulai dari 1. Salah satu pendekatan untuk mencari $p$ adalah dengan memeriksa apakah $p$ muncul pada indeks 1 di $t$. Jika anda menemukan kemunculan pertama $p$ di $t$, anda berhenti. Jika tidak, anda memeriksa apakah $p$ terjadi pada indeks 2 di $t$. Jika $p$ ditemukan di indeks 2, anda berhenti. Jika tidak, selanjutnya anda periksa apakah $p$ terjadi pada indeks 3 di $t$, dan seterusnya.
+
+\begin{algorithm}
+\caption{Algoritma \texttt{text\_search}}
+\begin{algorithmic}[1] 
+\Function{text\_search}{$p$, $m$, $t$, $n$}: 
+\newline \Comment{Input: $p$ (berindeks dari 1 sampai $m$), $m$, $t$ (berindeks dari 1 to $n$), $n$}
+\newline \Comment{Output: $i$}
+\For{$i = 1$ \textbf{to} $n-m+1$} 
+	\State $j = 1$
+	\newline \Comment{$i$ adalah indeks di dalam $t$ dari karakter pertama dari substring}
+	\newline \Comment{untuk membandingkannya dengan $p$, dan $j$ adalah indeks dalam $p$}
+	\newline \Comment{the while loop membandingkan $t_i \cdots t_{i+m-1}$ dan $p_1 \cdots p_m$} 
+	\While{$t_{i+j-1} == p_j$}
+		\State  $j = j + 1$
+		\If{$j>m$}
+			\State return i
+		\EndIf
+	\EndWhile
+\EndFor
+	\State return 0
+\EndFunction
+\end{algorithmic}
+\label{alg:text-search}
+\end{algorithm}
+
+\section*{Implementasi}
+Tugas anda adalah mengimplementasi Algoritma \ref{alg:text-search}. \\
+Buatlah juga minimal 3 \textit{test case} untuk menguji algoritma \textit{text search} anda.
+
+%
+%\section*{Implementasi}
+%	\begin{enumerate}[-,topsep=0pt, nosep,label=\arabic*. ]
+%		\item Ubahlah relasi rekurensi di Persamaan \eqref{eq:price-recursive-relation} menjadi \textit{solusi eksplisit}.  
+%		\item Implementasi Persamaan \eqref{eq:price-recursive-relation} dalam program.
+%	\end{enumerate}
+%
+%\begin{minted}{python}
+%def compute_cobweb(p_0, a, b, k, n):
+%    """
+%    Compute a price at n based on cobweb recursive relation	
+%    
+%    Parameters:
+%    -----------
+%    p_0 : float
+%        An initial price
+%    
+%    a, b, k : float
+%        Three positive parameters
+%    
+%    n : int
+%        The final time for the price to be computed    
+%    
+%    Returns:
+%    --------
+%    p_n : float
+%        The final price at time n
+%    """
+%    pass
+%\end{minted}
+%
+%\noindent Sebagai test drive, silakan anda hitung secara manual dan bandingkan hasil manual dengan hasil program.
+
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+
+\end{document}

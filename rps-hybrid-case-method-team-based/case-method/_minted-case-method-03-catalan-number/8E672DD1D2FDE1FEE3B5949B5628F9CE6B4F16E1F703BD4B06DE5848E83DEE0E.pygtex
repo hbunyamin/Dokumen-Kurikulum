@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{compute\PYGZus{}cobweb}\PYG{p}{(}\PYG{n}{p\PYGZus{}0}\PYG{p}{,} \PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{k}\PYG{p}{,} \PYG{n}{n}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    Compute a price at n based on cobweb recursive relation	}
+
+\PYG{l+s+sd}{    Parameters:}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    p\PYGZus{}0 : float}
+\PYG{l+s+sd}{        An initial price}
+
+\PYG{l+s+sd}{    a, b, k : float}
+\PYG{l+s+sd}{        Three positive parameters}
+
+\PYG{l+s+sd}{    n : int}
+\PYG{l+s+sd}{        The final time for the price to be computed}
+
+\PYG{l+s+sd}{    Returns:}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    p\PYGZus{}n : float}
+\PYG{l+s+sd}{        The final price at time n}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{pass}
+\end{Verbatim}
