@@ -1,11 +1,15 @@
 Feedback
 --------
 
-1. Bobot Penilaian Case Method adalah 20%.
+DONE! 1. Bobot Penilaian Case Method adalah 20%.
 Tiap Case Method = 5%.
 
-2.Tambahkan Link GMeet pada setiap Pertemuan.
+DONE! 2.Tambahkan Link GMeet pada setiap Pertemuan.
 
-3.Tambahkan Penjelasan Teknik Pelaksanaan Ujian berupa Label di UTS dan UAS.
+Kelas A: https://meet.google.com/zrm-kvmw-imu?authuser=0
+Kelas B: https://meet.google.com/wdn-pxeb-srx?authuser=0
 
-4. Memperbaiki kata-kata di CPMK
+
+DONE! 3.Tambahkan Penjelasan Teknik Pelaksanaan Ujian berupa Label di UTS dan UAS.
+
+DONE! 4. Memperbaiki kata-kata di CPMK
