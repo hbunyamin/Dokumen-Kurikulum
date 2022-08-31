@@ -1,0 +1,34 @@
+1.	TOPIK 0 terdiri dari 
+-	KODE, NAMA KULIAH, NAMA DOSEN 
+-	DESKRIPSI MK 
+-	CPMK 
+-	PUSTAKA 
+-	VIDEO OVERVIEW RPS 
+-   PRESENSI (OPTIONAL)
+
+1. Terdapat LOM Label untuk Kode, Nama Mata Kuliah dan Nama Dosen Pengampu Mata Kuliah. 
+2. Terdapat Deskripsi Mata Kuliah.
+3. Terdapat Label Capaian Pembelajaran Mata Kuliah (CPMK).
+4. Terdapat Label Daftar Pustaka.
+5. Terdapat LOM Video Overview RPS Mata Kuliah.
+6. Jumlah topik pertemuan yang memuat Judul Mata Kuliah (Lom Label):
+7. Jumlah pertemuan yang memuat Sub CPMK (Lom Label): 
+8. (Asinkronus) Jumlah topik pertemuan yang memuat Deskripsi Materi Pembelajaran Digital dan/atau video pembelajaran (LOM Label).
+9. [Asinkronus] Jumlah topik pertemuan yang memuat materi pendukung mata kuliah dalam bentuk video/file/pdf/web/ dll (Lom file/folder/url) 
+10.[Sinkronus] Jumlah topik pertemuan yang memuat aktivitas perkuliahan online berupa Forum/Chat/Vicon (Lom Chat/Url/Forum) 
+
+TOPIK 1 - 16:
+-	TERDAPAT MINIMAL 3 INFOGRAFIS (6)   
+-	TERDAPAT MINIMAL 2 LOM QUIZ DILUAR UTS/UAS (2)
+-	TERDAPAT MINIMAL 4 LOM ASSIGNMENT (2)
+-	TERDAPAT PRESENSI PADA SETIAP TOPIK ATAU PADA TOPIK 0 APABILA MENGGUNAKAN RESTRICT ACCESS (2)
+-	TERDAPAT 4 KONTEN INTERAKTIF (MINIMAL 2 WAJIB BERBASIS H5P) (7)
+-	UTS DAN UAS WAJIB MENGGUNAKAN LOM QUIZ / ASSIGNMENT
+
+1. [Asinkronus] Jumlah topik/pertemuan yang memuat Infografis
+2. [Sinkronus] Jumlah topik/pertemuan yang memuat aktivitas Lom Quiz (diluar UTS & UAS)
+3. [Sinkronus] Jumlah topik/pertemuan yang memuat aktivitas Lom Assignment (diluar UTS & UAS)
+4. [Sinkronus] Jumlah topik/pertemuan yang memuat  Lom presensi  atau pada topik 0 apabila menggunakan restrict access
+5. [Asinkronus] Jumlah topik/pertemuan yang memuat  konten interaktif (minimal 2 wajib berbasis H5P)
+6. UTS dan UAS menggunakan LOM Quiz / Assignment.
+
